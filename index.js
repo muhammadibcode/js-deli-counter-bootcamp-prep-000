@@ -26,7 +26,7 @@ function currentLine(queue) {
     return "The line is currently empty.";
   } else {
     var message = "The line is currently: ";
-    for (var i = 0; i == queue.length; i++) {
+    for (var i = 0; i != queue.length; i++) {
       message = message + `${i + 1}. ${queue[i]}, `;
     }
     return message;

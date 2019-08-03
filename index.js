@@ -15,7 +15,7 @@ function nowServing(queue) {
   } else {
     var firstperson = queue[0];
     queue.shift();
-    return firstperson;
+    return `Currently serving ${firstperson}`;
          }
 }
 

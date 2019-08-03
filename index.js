@@ -19,6 +19,7 @@ function currentLine(queue) {
   if (queue.length === 0) {
     return "The line is currently empty.";
   } else {
-    
+    for (i = 0, i = queue.length, queue.length
+    return `The line is currently: 1. 
   }
 }

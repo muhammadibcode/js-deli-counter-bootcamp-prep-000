@@ -1,3 +1,4 @@
+// 
 
 function takeANumber(queue, newperson) {
   queue.push(newperson);
@@ -19,7 +20,10 @@ function currentLine(queue) {
   if (queue.length === 0) {
     return "The line is currently empty.";
   } else {
-    for (i = 0, i = queue.length, queue.length
-    return `The line is currently: 1. 
+    numberofpeople = queue.length;
+    return `The line is currently: 1 $`
+    for (i = 0, i = numberofpeople, numberofpeople--) {
+
+    }
   }
 }

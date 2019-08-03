@@ -29,5 +29,6 @@ function currentLine(queue) {
     for (var i = 0; i == queue.length; i++) {
       message = message + `${i + 1}. ${queue[i]}, `;
     }
+    return message;
   }
 }

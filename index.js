@@ -4,7 +4,7 @@
 
 function takeANumber(queue, newperson) {
   queue.push(newperson);
-  return `Welcome, ${newperson}. You are number ${queue.length + 1} in line.`;
+  return `Welcome, ${newperson}. You are number ${queue.length} in line.`;
 }
 
 // Now Serving
@@ -26,8 +26,8 @@ function currentLine(queue) {
     return "The line is currently empty.";
   } else {
     var message = "The line is currently: ";
-    for (i = 0, i = queue.length, i++) {
-      message = message + `${queue[i]},`;
+    for (i = 0; i == queue.length; i++) {
+      message = message + `${i + 1}. ${queue[i]}, `;
     }
   }
 }

@@ -4,7 +4,7 @@
 
 function takeANumber(queue, newperson) {
   queue.push(newperson);
-  return `Welcome, ${newperson}. You are number ${queue.length + 1} in line.`;
+  return `Welcome, ${newperson}. You are number ${queue.length} in line.`;
 }
 
 // Now Serving
@@ -19,16 +19,15 @@ function nowServing(queue) {
          }
 }
 
-// CurrentLine 
+// Current Line 
 
 function currentLine(queue) {
   if (queue.length === 0) {
     return "The line is currently empty.";
   } else {
-    numberofpeople = queue.length;
-     `The line is currently:` + 
-    for (i = 0, i = numberofpeople, numberofpeople--) {
-
+    var message = "The line is currently: ";
+    for (i = 0, i = queue.length, i++) {
+      message = message + `${queue[i]},`;
     }
   }
 }

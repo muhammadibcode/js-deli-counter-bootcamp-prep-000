@@ -38,9 +38,9 @@ function currentLine(queue) {
     // To understand if we're at the final loop and remove the comma we check if 'i' (the current index) is equal to 'queue.length - 1' (the final person's index).
       
       if (i == queue.length - 1) {
-      message = message + ` ${i + 1}. ${queue[i]}`
+      message = message + ` ${i + 1}. ${queue[i]}`;
                                  } else {
-      message = message + ` ${i + 1}. ${queue[i]},`
+      message = message + ` ${i + 1}. ${queue[i]},`;
                                  }
     }
     return message;

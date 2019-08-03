@@ -15,7 +15,7 @@ function nowServing(queue) {
   } else {
     var firstperson = queue[0];
     queue.shift();
-    return `Currently serving ${firstperson}`;
+    return `Currently serving ${firstperson}.`;
          }
 }
 
@@ -26,7 +26,7 @@ function currentLine(queue) {
     return "The line is currently empty.";
   } else {
     var message = "The line is currently: ";
-    for (i = 0; i == queue.length; i++) {
+    for (var i = 0; i == queue.length; i++) {
       message = message + `${i + 1}. ${queue[i]}, `;
     }
   }

@@ -27,7 +27,7 @@ function currentLine(queue) {
   } else {
     var message = "The line is currently: ";
     for (var i = 0; i != queue.length; i++) {
-      message = message + `${i + 1}. ${queue[i]}` + if (i)
+      message = message + `${i + 1}. ${queue[i]}` + 
     }
     return message;
   }

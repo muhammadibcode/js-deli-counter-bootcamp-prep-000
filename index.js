@@ -4,7 +4,7 @@
 
 function takeANumber(queue, newperson) {
   queue.push(newperson);
-  return `Welcome, ${newperson}. You are number ${queue.length} in line.`;
+  return `Welcome, ${newperson}. You are number ${queue.length + 1} in line.`;
 }
 
 // Now Serving

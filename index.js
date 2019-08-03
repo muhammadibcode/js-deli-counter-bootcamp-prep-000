@@ -26,7 +26,7 @@ function currentLine(queue) {
     return "The line is currently empty.";
   } else {
     numberofpeople = queue.length;
-    return `The line is currently:` + 
+     `The line is currently:` + 
     for (i = 0, i = numberofpeople, numberofpeople--) {
 
     }

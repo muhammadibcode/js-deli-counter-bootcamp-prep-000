@@ -26,10 +26,9 @@ function currentLine(queue) {
     return "The line is currently empty.";
   } else {
     var message = "The line is currently:";
+    // 'i' will be the index of each person in the queue.  'i + 1' will be the actual position of a person in the queue.  Queue length will be the actual position of the final person in the queue.
     // If the queue length is 3, 'i' will increment and execute the for loop until it reaches 3.  On 3 it will not execute the loop.
-    // 'i' will be the index of each person in the queue.  'i + 1' is the actual position of a person in the queue.
     for (var i = 0; i != queue.length; i++) {
-
       if (i != queue.length - 1) {
       message = message + ` ${i + 1}. ${queue[i]},`
                                  } else {
